@@ -15,11 +15,12 @@ public class BaseTests {
         System.setProperty("webdriver.chrome.driver", "src/resource/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com");
-        WebElement inputLinks = driver.findElement(By.linkText("Inputs"));
+        WebElement inputLinks = driver.findElement(By.linkText("Shifting Content"));
         inputLinks.click();
-        List<WebElement> links = driver.findElements(By.tagName("a"));
-        System.out.println("El numero total de links es " + links.size());
-        System.out.println(driver.getTitle());
+        WebElement menu1 = driver.findElement(By.linkText("Example 1: Menu Element"));
+        menu1.click();
+        List<WebElement> menuItems = driver.findElements(By.tagName("ul"));
+        System.out.println("The amount of menues is of : " + menuItems.size());
 
     }
 

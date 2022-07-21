@@ -19,8 +19,10 @@ public class BaseTests {
         inputLinks.click();
         WebElement menu1 = driver.findElement(By.linkText("Example 1: Menu Element"));
         menu1.click();
-        List<WebElement> menuItems = driver.findElements(By.tagName("ul"));
-        System.out.println("The amount of menues is of : " + menuItems.size());
+        List<WebElement> menuItems = driver.findElements(By.tagName("li"));
+        System.out.println("The amount of menues li is of : " + menuItems.size());
+        List<WebElement> tagNames_a = driver.findElements(By.tagName("a"));
+        System.out.println("The amount of tagNames staritng with a are: " + tagNames_a.size());
 
     }
 

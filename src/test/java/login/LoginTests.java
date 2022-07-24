@@ -1,4 +1,4 @@
-package Login;
+package login;
 
 import org.barreragerman.pages.LoginPage;
 import org.barreragerman.pages.SecureAreaPage;

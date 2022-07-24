@@ -16,22 +16,22 @@ public class DropdownPage extends AbstractPage {
         super(driver);
     }
 
+    private Select findDropdownElement() {
+        return new Select(driver.findElement(dropdown));
+    }
+
     public void selectFromDropdown(String option) {
         findDropdownElement().selectByVisibleText(option);
     }
 
     /**
-     * Here I make alist othe the selected options and then get the text of each one in a list
-     * @return
+     * Here I make a list of the selected options and then get the text of each one in a list
+     * @return a list of the selected options
      */
     public List<String> getSelectedOptions() {
         List<WebElement> selectedElements = findDropdownElement().getAllSelectedOptions();
         return selectedElements.stream().map(e->e.getText()).collect(Collectors.toList());
 
-    }
-
-    private Select findDropdownElement() {
-        return new Select(driver.findElement(dropdown));
     }
 
 }

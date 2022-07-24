@@ -22,6 +22,10 @@ public class HomePage extends AbstractPage{
         //Here we are passing the same driver in order to continuous interaction with the page
         return new LoginPage(driver);
     }
+    public ForgotPasswordPage clickInForgotPassword(){
+        clickLink("Forgot Password");
+        return new ForgotPasswordPage(driver);
+    }
 
     /**
      * In this method I dont return anything because it is a generic method

@@ -1,12 +1,12 @@
 package dropdown;
 
-import org.barreragerman.webDriver.BaseTests;
+import org.barreragerman.webDriver.TheInternetBaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class DropdownTest extends BaseTests {
+public class DropdownTest extends TheInternetBaseTests {
 
     @Test
     public void testSelectedOptions() {

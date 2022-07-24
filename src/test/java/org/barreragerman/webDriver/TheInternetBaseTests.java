@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class BaseTests {
+public class TheInternetBaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
@@ -38,7 +38,7 @@ public class BaseTests {
 
 
 //    public static void main(String[] args) {
-//        BaseTests tests = new BaseTests();
+//        TheInternetBaseTests tests = new TheInternetBaseTests();
 //        tests.setUp();
 //    }
 }

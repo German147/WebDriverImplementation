@@ -41,4 +41,9 @@ public class HomePage extends AbstractPage{
         return new DropdownPage(driver);
     }
 
+    public HoversPage clickHover(){
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
+
 }

@@ -27,15 +27,6 @@ public class HomePage extends AbstractPage{
         return new ForgotPasswordPage(driver);
     }
 
-    /**
-     * In this method I dont return anything because it is a generic method
-     * to be called by any method
-     * @param linkText it is for the WebElement locator
-     */
-    public void clickLink(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
-    }
-
     public DropdownPage clickOnDropdownLink(){
         clickLink("Dropdown");
         return new DropdownPage(driver);
@@ -45,5 +36,23 @@ public class HomePage extends AbstractPage{
         clickLink("Hovers");
         return new HoversPage(driver);
     }
+    public KeyPressesPage clickKeyPress(){
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
+
+    public HorizontalSliderPage clickHorizonalSlider(){
+        clickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
+    /**
+     * In this method I dont return anything because it is a generic method
+     * to be called by any method
+     * @param linkText it is for the WebElement locator
+     */
+    public void clickLink(String linkText){
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
 
 }

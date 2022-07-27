@@ -41,6 +41,10 @@ public class HomePage extends AbstractPage{
         return new KeyPressesPage(driver);
     }
 
+    public AlertsPage clickOnAlertPage(){
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
     public HorizontalSliderPage clickHorizonalSlider(){
         clickLink("Horizontal Slider");
         return new HorizontalSliderPage(driver);

@@ -1,0 +1,23 @@
+1. Which programming language is needed to write scripts using the Selenium WebDriver Java API?
+JavaScript
+Java		Esta!!
+PHP
+Ruby
+
+2. WebDriver scripts can only be written with the IntelliJ editor.
+True
+False		Esta!!
+
+3. The driver executable must correspond to the appropriate version of the browser.
+True		Esta!!	
+False
+
+4. What's the name of the executable file needed to run WebDriver scripts on the Chrome browser?
+chromerunner
+chromebrowser
+chromedriver		Esta!
+seleniumchrome
+
+5. In additional to the executable file, you also must include the Selenium dependency to execute Selenium scripts.
+True		ESta!!
+False

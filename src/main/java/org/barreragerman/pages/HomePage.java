@@ -49,6 +49,10 @@ public class HomePage extends AbstractPage{
         clickLink("Horizontal Slider");
         return new HorizontalSliderPage(driver);
     }
+    public FileUploaderPage clickOnFileUpLoader(){
+        clickLink("File Upload");
+        return new FileUploaderPage(driver);
+    }
     /**
      * In this method I dont return anything because it is a generic method
      * to be called by any method

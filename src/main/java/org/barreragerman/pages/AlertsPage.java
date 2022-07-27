@@ -1,5 +1,6 @@
 package org.barreragerman.pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -26,19 +27,15 @@ public class AlertsPage extends AbstractPage {
     public void triggerConfirmClick(){
         driver.findElement(triggerConfirmbutton).click();
     }
-
     public void clickOnConfirmDismiss(){
         driver.switchTo().alert().dismiss();
     }
-
     public void clickToAcceptAlert() {
         driver.switchTo().alert().accept();
     }
-
     public String getConfirmTextResult(){
         return driver.switchTo().alert().getText();
     }
-
     public String getAlertTextResult() {
         return driver.findElement(resultText).getText();
     }

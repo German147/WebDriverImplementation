@@ -29,4 +29,5 @@ public class FileUploaderPage extends AbstractPage {
     public String getUploadedText(){
         return driver.findElement(uploadedFiledText).getText();
     }
+    
 }

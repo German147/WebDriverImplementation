@@ -53,6 +53,11 @@ public class HomePage extends AbstractPage{
         clickLink("File Upload");
         return new FileUploaderPage(driver);
     }
+
+    public WysiwygEditorPage clickOnWysiwygEditor(){
+        clickLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
     /**
      * In this method I dont return anything because it is a generic method
      * to be called by any method

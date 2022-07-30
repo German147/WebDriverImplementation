@@ -58,6 +58,11 @@ public class HomePage extends AbstractPage{
         clickLink("WYSIWYG Editor");
         return new WysiwygEditorPage(driver);
     }
+
+    public DynamicLoadingPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
     /**
      * In this method I dont return anything because it is a generic method
      * to be called by any method

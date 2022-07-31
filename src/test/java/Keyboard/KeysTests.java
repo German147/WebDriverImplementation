@@ -20,7 +20,7 @@ public class KeysTests extends TheInternetBaseTests {
     public void testSpacekey() {
         var keypage = homePage.clickKeyPress();
         keypage.enterText("A" + Keys.SPACE);
-        assertEquals(keypage.getResult(), "You entered: SPACE");
+        assertEquals(keypage.getResult(), "You entered: SPACE!");
         System.out.println(keypage.getResult());
     }
 

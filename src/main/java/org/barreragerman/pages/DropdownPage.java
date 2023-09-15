@@ -21,7 +21,7 @@ public class DropdownPage extends AbstractPage {
     }
 
     /**
-     * Here I make alist othe the selected options and then get the text of each one in a list
+     * Here I make a list of the selected options and then get the text of each one in a list
      * @return
      */
     public List<String> getSelectedOptions() {
